@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Dracula",
+		"workbench.iconTheme": "vs-seti",
+		"window.autoDetectColorScheme": false
+	}
+}
