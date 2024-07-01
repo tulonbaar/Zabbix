@@ -611,7 +611,7 @@ else {
     Write-Host "Remove completed."
 
     # Install Zabbix Agent 2
-    $params = '"/SERVER:zabbix.hartphp.com.pl,zabbix-new.hartphp.com.pl /SERVERACTIVE:zabbix.hartphp.com.pl,zabbix-new.hartphp.com.pl /HOSTNAME:' + $env:COMPUTERNAME + '"'
+    $params = '"/SERVER:<zabbix-server-address> /SERVERACTIVE:<zabbix-server-address> /HOSTNAME:' + $env:COMPUTERNAME + '"'
     choco install zabbix-agent2 --force -y --params $params
 }
 
