@@ -92,8 +92,8 @@ CONFIG_FILE="/etc/zabbix/zabbix_agent2.conf"
 HOSTNAME=$(hostname)
 
 # Update or add the required configuration lines
-update_or_add_line "Server=" "zabbix.hartphp.com.pl,zabbix-new.hartphp.com.pl" "$CONFIG_FILE"
-update_or_add_line "ServerActive=" "zabbix.hartphp.com.pl,zabbix-new.hartphp.com.pl" "$CONFIG_FILE"
+update_or_add_line "Server=" "<zabbix-server-address>" "$CONFIG_FILE"
+update_or_add_line "ServerActive=" "<zabbix-server-address>" "$CONFIG_FILE"
 update_or_add_line "Hostname=" "$HOSTNAME" "$CONFIG_FILE"
 update_or_add_line "AllowKey=" "system.run[*]" "$CONFIG_FILE"
 
